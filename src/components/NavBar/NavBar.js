@@ -17,6 +17,8 @@ class NavBar extends Component {
         if (this.props.loggedInUser && this.props.location.pathname === '/Login') {
             return <Redirect to="/" />;
         }
+
+        
         
         return (
             <div>
@@ -37,7 +39,7 @@ class NavBar extends Component {
                     {this.props.loggedInUser
                         ? <>
                             <Nav className="ml-auto">
-                                <Nav.Link href="../components/PopUpWindow/PopUpWindow.html">Create</Nav.Link>
+                                <button onClick={this._onClick}>Create</button>
                                 <Nav.Link href="#">Notification</Nav.Link>
                             </Nav>
                             <NavDropdown title="Icon" id="basic-nav-dropdown">

@@ -20,7 +20,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/zitherscore-local-20191105130630-deployment/amplify-cfn-templates/auth/zitherscore7de0a299-cloudformation-template.yml",
 				"logicalId": "authzitherscore7de0a299"
 			},
-			"lastPushTimeStamp": "2019-11-05T19:55:16.749Z",
+			"lastPushTimeStamp": "2019-11-08T18:34:36.430Z",
 			"output": {
 				"AppClientSecret": "1kagl8emnqq6ujleuan4jgb7tu700q8k1u6tg9vr1uosfmi6r4ve",
 				"UserPoolId": "us-east-2_7F0WLIMNk",
@@ -41,7 +41,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/zitherscore-local-20191105130630-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
 				"logicalId": "analyticszitherscore"
 			},
-			"lastPushTimeStamp": "2019-11-05T19:55:16.750Z",
+			"lastPushTimeStamp": "2019-11-08T18:34:36.434Z",
 			"output": {
 				"appName": "zitherscore-local",
 				"Region": "us-east-1",
@@ -71,8 +71,8 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/zitherscore-local-20191105130630-deployment/amplify-cfn-templates/api/cloudformation-template.json",
 				"logicalId": "apizitherscore"
 			},
-			"lastPushTimeStamp": "2019-11-05T19:55:16.753Z",
-			"lastPushDirHash": "7bXvGEZ5ILwBQXxPfPDPagUHXeI="
+			"lastPushTimeStamp": "2019-11-08T18:34:36.438Z",
+			"lastPushDirHash": "EWaduLFAxSzBzXuZFnq2iQOQ2YA="
 		}
 	}
 }

@@ -5,22 +5,22 @@ class Settings extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            userInfo: { }
+            userInfo: {}
         };
     }
    
     async componentDidMount() {
-        const userInfo = await Auth.currentUserInfo()
+        const userInfo = await Auth.currentAuthenticatedUser();
         this.setState({ userInfo });
     }
 
     render () {
         const { userInfo }= this.state;
-        const { username } = userInfo;
-        
+        const { attributes } = userInfo;
+        console.log(attributes);
         return (
-            <div>
-                <p>Username: {username}</p>
+            <div className = "container">
+                <p>Username: {userInfo.username}</p>
                 <p>password: </p> 
                 <p>email: </p>
             </div>

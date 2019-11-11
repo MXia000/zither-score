@@ -157,7 +157,7 @@
 						]
 					},
 					"S3DeploymentBucket": "zitherscore-local-20191105130630-deployment",
-					"S3DeploymentRootKey": "amplify-appsync-files/68eb577a66b1e0170578e77f89fd5def52831d87",
+					"S3DeploymentRootKey": "amplify-appsync-files/c3fc4646ca7834e2e1d98ae75f5a1b5f7247ff8e",
 					"env": "local"
 				}
 			}

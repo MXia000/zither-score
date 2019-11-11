@@ -39,7 +39,7 @@ class NavBar extends Component {
                     {this.props.loggedInUser
                         ? <>
                             <Nav className="ml-auto">
-                                <button onClick={this._onClick}>Create</button>
+                                <Nav.Link onClick="openForm()" herf='../PopUpWindow/PopUpWindow.html'>Create</Nav.Link>
                                 <Nav.Link href="#">Notification</Nav.Link>
                             </Nav>
                             <NavDropdown title="Icon" id="basic-nav-dropdown">

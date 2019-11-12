@@ -9,19 +9,21 @@ import {
     Button
     } from 'react-bootstrap';
 import Popup from "reactjs-popup";
+import PopUpWindow from '../PopUpWindow/PopUpWindow'
 
 
 
 
-class NavBar extends Component {
-    _onClick(){
-        <Popup
-        trigger={<button className="button"> Open Modal </button>}
-        modal
-        closeOnDocumentClick
-      >
-        <span> Modal content </span>
-      </Popup>
+class NavBar extends Component {
+       state={
+           showPopOut :true
+    
+       }
+       _onclick = () => {
+        this.setState({
+           showPopOut: true
+    }, () => {console.log('this is state: ', this.state)})
+    
     }
 
     render(){  
@@ -51,7 +53,7 @@ class NavBar extends Component {
                     {this.props.loggedInUser
                         ? <>
                             <Nav className="ml-auto">
-                                <Nav.Link onClick={this._onClick} herf='../PopUpWindow/PopUpWindow.html'>Create</Nav.Link>
+                                <Nav.Link onClick={this._onClick} href='#'>Create</Nav.Link>
                                 <Nav.Link href="#">Notification</Nav.Link>
                             </Nav>
                             <NavDropdown title="Icon" id="basic-nav-dropdown">

@@ -8,10 +8,22 @@ import {
     FormControl,
     Button
     } from 'react-bootstrap';
+import Popup from "reactjs-popup";
+
 
 
 
 class NavBar extends Component {
+    _onClick(){
+        <Popup
+        trigger={<button className="button"> Open Modal </button>}
+        modal
+        closeOnDocumentClick
+      >
+        <span> Modal content </span>
+      </Popup>
+    }
+
     render(){  
         console.log(this.props.location);
         if (this.props.loggedInUser && this.props.location.pathname === '/Login') {
@@ -39,7 +51,7 @@ class NavBar extends Component {
                     {this.props.loggedInUser
                         ? <>
                             <Nav className="ml-auto">
-                                <Nav.Link onClick="openForm()" herf='../PopUpWindow/PopUpWindow.html'>Create</Nav.Link>
+                                <Nav.Link onClick={this._onClick} herf='../PopUpWindow/PopUpWindow.html'>Create</Nav.Link>
                                 <Nav.Link href="#">Notification</Nav.Link>
                             </Nav>
                             <NavDropdown title="Icon" id="basic-nav-dropdown">
@@ -57,6 +69,7 @@ class NavBar extends Component {
                 </Navbar.Collapse>
                 </Navbar>
             </div>
+            
         )
     }
 }
